@@ -18,7 +18,7 @@ namespace MinMax
             TcpListener listener = new TcpListener(iPEndPoint);
             listener.Start();
             Socket sk = listener.AcceptSocket();
-
+            //12312312
             NetworkStream ns = new NetworkStream(sk);
             StreamReader sr = new StreamReader(ns);
             StreamWriter sw = new StreamWriter(ns);
